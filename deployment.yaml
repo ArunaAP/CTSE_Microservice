@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: product-catalog-service
-          image: approductcatelogregistry.azurecr.io/product-catalog-service:latest
+          image: productcatelogregistry.azurecr.io/product-catalog-service:latest
           ports:
             - containerPort: 4000
       imagePullSecrets:
