@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 
 //Connect to MongoDB
 mongoose.connect(
-	"mongodb+srv://arunapriyankara99ap:aruna99@cluster0.oedlfw9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+	"mongodb+srv://namal:admin@procuxacluster1.u8hebp5.mongodb.net/?retryWrites=true&w=majority&appName=ProcuxaCluster1"
 );
 const db = mongoose.connection;
 db.on("error", (error) => console.error(error));
@@ -19,7 +19,6 @@ app.use("/products", productRouter);
 
 //Start server
 const PORT = process.env.PORT || 4000;
-
 const HOST = "0.0.0.0"; // Listen on all available network interfaces
 app.listen(PORT, HOST, () => {
 	console.log(`Server started on http://${HOST}:${PORT}`);
